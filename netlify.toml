@@ -1,0 +1,7 @@
+# Vinext static export. Publish built files, not the source or dist/server.
+[build]
+  command = "npm run build"
+  publish = "dist/client"
+
+[build.environment]
+  NODE_VERSION = "22.18.0"
