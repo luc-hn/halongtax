@@ -3,12 +3,12 @@
 @import 'shadcn/tailwind.css';
 :root {
   --background: #fff;
-  --foreground: #172438;
+  --foreground: #292326;
   --popover: #fff;
-  --popover-foreground: #172438;
-  --muted-foreground: #607085;
-  --primary: #2463db;
-  --border: #e3e9f1;
+  --popover-foreground: #292326;
+  --muted-foreground: #69616a;
+  --primary: #b91c1c;
+  --border: #ebe3e3;
   --font-sans: Arial, 'Segoe UI', sans-serif;
   --radius: 0.75rem;
   color-scheme: light;
@@ -33,7 +33,7 @@ html {
 body {
   margin: 0;
   background: #fff;
-  color: #172438;
+  color: #292326;
   font-family: Arial, 'Segoe UI', sans-serif;
   font-size: 16px;
   line-height: 1.7;
@@ -54,7 +54,7 @@ a {
 button:focus-visible,
 a:focus-visible,
 summary:focus-visible {
-  outline: 3px solid #71a2fb;
+  outline: 3px solid #ef4444;
   outline-offset: 4px;
 }
 button {
@@ -66,12 +66,12 @@ svg {
 }
 p {
   margin: 0 0 20px;
-  color: #607085;
+  color: #69616a;
 }
 h1,
 h2,
 h3 {
-  color: #172438;
+  color: #292326;
   line-height: 1.25;
   letter-spacing: -0.035em;
 }
@@ -114,10 +114,10 @@ strong {
   font-size: 33px;
   font-weight: 800;
   letter-spacing: -1.8px;
-  color: #2463db;
+  color: #b91c1c;
 }
 .brand-dot {
-  color: #172438;
+  color: #292326;
 }
 .header-divider {
   height: 22px;
@@ -161,14 +161,14 @@ strong {
   font-weight: 600;
 }
 .share-button:hover {
-  background: #f4f7fc;
+  background: #fff5f5;
 }
 .share-status {
   position: absolute;
   right: 20px;
   top: 70px;
   background: #fff;
-  box-shadow: 0 4px 15px #17243810;
+  box-shadow: 0 4px 15px #29232610;
   font-size: 14px;
 }
 .page-shell {
@@ -217,18 +217,18 @@ strong {
   color: #96a2b3;
 }
 .chapter-nav nav a.active {
-  background: #eef4ff;
-  color: #2463db;
+  background: #fff1f2;
+  color: #b91c1c;
   font-weight: 650;
 }
 .chapter-nav nav a.active > span:first-child {
-  color: #2463db;
+  color: #b91c1c;
 }
 .nav-dot {
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  background: #2463db;
+  background: #b91c1c;
   margin-left: auto;
 }
 .sidebar-note {
@@ -245,7 +245,7 @@ strong {
 .blue-dot {
   width: 7px;
   height: 7px;
-  background: #2463db;
+  background: #b91c1c;
   display: inline-block;
   border-radius: 50%;
   flex-shrink: 0;
@@ -271,14 +271,14 @@ strong {
   display: flex;
   gap: 10px;
   align-items: center;
-  color: #2463db;
+  color: #b91c1c;
 }
 .eyebrow-divider {
   color: #b4c4d9;
   margin: 0 3px;
 }
 h1 > span {
-  color: #2463db;
+  color: #b91c1c;
 }
 .hero-description {
   font-size: 16px;
@@ -291,7 +291,7 @@ h1 > span {
   align-items: center;
   gap: 9px;
   font-size: 14px;
-  color: #607085;
+  color: #69616a;
   margin: 26px 0;
 }
 .story-line strong {
@@ -319,12 +319,12 @@ h1 > span {
   line-height: 1.5;
 }
 .primary {
-  background: #2463db;
+  background: #b91c1c;
   color: white;
-  box-shadow: 0 3px 6px #2463db15;
+  box-shadow: 0 3px 6px #b91c1c15;
 }
 .primary:hover {
-  background: #1c53bc;
+  background: #991b1b;
 }
 .outline {
   border: 1px solid var(--border);
@@ -337,7 +337,7 @@ h1 > span {
   align-items: center;
   gap: 8px;
   font-size: 14px;
-  color: #2463db;
+  color: #b91c1c;
   font-weight: 600;
   padding: 7px 0;
 }
@@ -348,14 +348,14 @@ h1 > span {
 .metrics {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  border: 1px solid #e1e8f1;
+  border: 1px solid #eee0e0;
   border-radius: 9px;
   padding: 25px 0;
-  background: linear-gradient(120deg, #fafcff, white);
+  background: linear-gradient(120deg, #fffafa, white);
 }
 .metric {
   padding: 0 20px;
-  border-right: 1px solid #e1e8f1;
+  border-right: 1px solid #eee0e0;
 }
 .metric:last-child {
   border: 0;
@@ -415,10 +415,10 @@ h1 > span {
 .chapter-number {
   min-width: 42px;
   height: 42px;
-  background: #eff4fc;
-  border: 1px solid #e2eaf6;
+  background: #fff1f2;
+  border: 1px solid #fecdd3;
   border-radius: 8px;
-  color: #2463db;
+  color: #b91c1c;
   display: grid;
   place-items: center;
   font-size: 14px;
@@ -436,7 +436,7 @@ h1 > span {
   max-width: 680px;
 }
 .agreement-card {
-  border: 1px solid #dfe7f2;
+  border: 1px solid #eee0e0;
   border-radius: 9px;
   margin: 24px 0 12px;
   overflow: hidden;
@@ -470,7 +470,7 @@ h1 > span {
   display: flex;
   gap: 10px;
   align-items: center;
-  color: #60738b;
+  color: #746168;
   background: #f6f8fb;
   font-size: 13px;
   border-top: 1px solid #e5ebf4;
@@ -486,8 +486,8 @@ h1 > span {
   margin: 0;
 }
 .increase {
-  background: #fff2ee;
-  color: #ba5539;
+  background: #fee2e2;
+  color: #b91c1c;
   border-radius: 6px;
   padding: 5px 11px;
   font-size: 20px;
@@ -541,20 +541,20 @@ h1 > span {
   margin-left: 4px;
 }
 .fee-bar {
-  background: #dce8fc;
+  background: #fecdd3;
   width: 100%;
   max-width: 145px;
   border-radius: 5px 5px 0 0;
   min-height: 35px;
 }
 .fee-1 .fee-bar {
-  background: #a3c0f4;
+  background: #f87171;
 }
 .fee-2 .fee-bar {
-  background: #2463db;
+  background: #b91c1c;
 }
 .fee-2 > strong {
-  color: #2463db;
+  color: #b91c1c;
 }
 .fee-column > span {
   position: absolute;
@@ -566,7 +566,7 @@ h1 > span {
 }
 .context-note {
   padding-left: 16px;
-  border-left: 2px solid #d0def4;
+  border-left: 2px solid #fca5a5;
   font-size: 14px;
   font-style: italic;
 }
@@ -691,8 +691,8 @@ h1 > span {
   font-size: 13px;
 }
 .handover-section {
-  background: #f4f7fd;
-  border: 1px solid #dbe5f6;
+  background: #fff5f5;
+  border: 1px solid #fecaca;
   border-radius: 12px;
   padding: 30px;
   margin: 35px 0;
@@ -732,7 +732,7 @@ h1 > span {
   top: 10px;
   width: 5px;
   height: 5px;
-  background: #8ba7d1;
+  background: #dc7474;
   border-radius: 50%;
 }
 .handover-diagram {
@@ -746,23 +746,23 @@ h1 > span {
   gap: 10px;
   padding: 13px 16px;
   background: white;
-  border: 1px solid #dbe5f3;
+  border: 1px solid #f5cccc;
   border-radius: 7px;
   width: 100%;
   font-size: 13px;
   justify-content: center;
 }
 .handover-diagram svg {
-  color: #698ab8;
+  color: #b45353;
 }
 .diagram-arrow {
   height: 25px;
   margin: 5px;
 }
 .handover-diagram .data-node {
-  background: #e9f0fd !important;
-  border-color: #bcd1f2 !important;
-  color: #245bb5;
+  background: #fee2e2 !important;
+  border-color: #fca5a5 !important;
+  color: #991b1b;
 }
 .blocked {
   display: flex;
@@ -773,26 +773,26 @@ h1 > span {
   justify-content: center;
 }
 .blocked span {
-  border-top: 1px dashed #bd795e;
+  border-top: 1px dashed #dc2626;
   width: 40px;
 }
 .blocked svg {
-  color: #ba7659;
+  color: #b91c1c;
 }
 .handover-diagram small {
   font-size: 11px;
-  color: #a86c50;
+  color: #991b1b;
 }
 .consequence {
-  border-top: 1px solid #dbe5f3;
+  border-top: 1px solid #f5cccc;
   padding: 22px 0 7px;
 }
 .consequence .eyebrow {
-  color: #a66c4a;
+  color: #991b1b;
 }
 .consequence p {
   font-size: 21px;
-  color: #293e5b;
+  color: #522525;
   font-weight: 600;
   line-height: 1.5;
   max-width: 580px;
@@ -820,8 +820,8 @@ h1 > span {
   gap: 7px;
 }
 .filter-list button.active {
-  background: #2463db;
-  border-color: #2463db;
+  background: #b91c1c;
+  border-color: #b91c1c;
   color: #fff;
 }
 .filter-list span {
@@ -851,7 +851,7 @@ h1 > span {
   display: block;
   position: relative;
   overflow: hidden;
-  background: #f1f5fa;
+  background: #f7f4f4;
   border-bottom: 1px solid var(--border);
 }
 .evidence-thumbnail img {
@@ -887,7 +887,7 @@ h1 > span {
   height: 29px;
   display: grid;
   place-items: center;
-  color: #557197;
+  color: #995454;
 }
 .evidence-content {
   padding: 17px;
@@ -900,7 +900,7 @@ h1 > span {
   gap: 8px;
 }
 .evidence-meta > span:first-child {
-  color: #3166b5;
+  color: #b91c1c;
 }
 .evidence-content h3 {
   font-size: 16px;
@@ -930,7 +930,7 @@ h1 > span {
   line-height: 1.35;
 }
 .lesson-quote span {
-  color: #2463db;
+  color: #b91c1c;
 }
 .lesson-content > p:nth-child(2) {
   font-size: 14px;
@@ -953,14 +953,14 @@ h1 > span {
 }
 .lesson-list svg {
   margin-left: auto;
-  color: #397aca;
+  color: #b91c1c;
 }
 .disclaimer {
   padding: 40px 0 70px;
 }
 .footer-brand {
   font-weight: 800;
-  color: #2463db;
+  color: #b91c1c;
   font-size: 25px;
   letter-spacing: -1px;
   display: flex;
@@ -992,7 +992,7 @@ h1 > span {
   left: 0;
   height: 3px;
   width: 100%;
-  background: #2463db;
+  background: #b91c1c;
   transform-origin: left;
   z-index: 60;
 }
@@ -1021,7 +1021,7 @@ h1 > span {
   z-index: 100;
   background: white;
   padding: 12px;
-  color: #2463db;
+  color: #b91c1c;
 }
 .skip-link:focus {
   top: 0;
@@ -1072,13 +1072,13 @@ h1 > span {
   background: white;
 }
 .icon-button:hover {
-  background: #edf3fc;
+  background: #fff1f2;
 }
 .viewer-stage {
   min-height: 0;
   flex: 1;
   overflow: auto;
-  background: #eaf0f7;
+  background: #f5f2f2;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1535,8 +1535,8 @@ h1 > span {
     border-top: 2px solid transparent;
   }
   .mobile-chapters a.active {
-    color: #2463db;
-    border-color: #2463db;
+    color: #b91c1c;
+    border-color: #b91c1c;
     font-weight: 700;
   }
   .back-top {
@@ -1591,9 +1591,9 @@ h1 > span {
   display: flex;
   align-items: center;
   gap: 24px;
-  border: 1px solid #dbe5f4;
+  border: 1px solid #fca5a5;
   border-radius: 10px;
-  background: #f4f8ff;
+  background: #fff1f2;
   padding: 22px 24px;
   margin: 0 0 32px;
 }
@@ -1603,7 +1603,7 @@ h1 > span {
 }
 .rating-score {
   line-height: 1.1;
-  color: #2463db;
+  color: #b91c1c;
   white-space: nowrap;
 }
 .rating-score strong {
@@ -1623,8 +1623,8 @@ h1 > span {
   color: #a9b6c9;
 }
 .rating-stars .filled {
-  fill: #2463db;
-  stroke: #2463db;
+  fill: #b91c1c;
+  stroke: #b91c1c;
 }
 .rating-copy h2 {
   font-size: 17px;
@@ -1695,7 +1695,7 @@ h1 > span {
 }
 
 .contact-context {
-  border-left: 3px solid #2463db;
+  border-left: 3px solid #b91c1c;
   padding: 4px 0 4px 18px;
   margin: 24px 0;
 }
@@ -1705,4 +1705,38 @@ h1 > span {
 .contact-context p {
   font-size: 15px;
   margin-bottom: 12px;
+}
+
+.warning-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #991b1b;
+  font-size: 12px;
+  font-weight: 750;
+  letter-spacing: 0.7px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+.warning-label svg {
+  flex-shrink: 0;
+}
+.service-rating {
+  border-left: 5px solid #b91c1c;
+  box-shadow: 0 4px 16px #991b1b08;
+}
+.handover-section {
+  border-top: 4px solid #b91c1c;
+}
+.increase {
+  border: 1px solid #fca5a5;
+}
+.site-header {
+  border-bottom-color: #ead1d1;
+}
+@media (max-width: 760px) {
+  .warning-label {
+    font-size: 12px;
+    letter-spacing: 0.3px;
+  }
 }

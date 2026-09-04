@@ -1,4 +1,4 @@
-import { Star } from 'lucide-react';
+import { Star, TriangleAlert } from 'lucide-react';
 import { serviceRating } from '@/data/case';
 
 export function ServiceRating() {
@@ -23,6 +23,10 @@ export function ServiceRating() {
         </div>
       </div>
       <div className="rating-copy">
+        <div className="warning-label">
+          <TriangleAlert size={17} aria-hidden="true" /> CẦN CÂN NHẮC TRƯỚC KHI
+          HỢP TÁC
+        </div>
         <h2 id="service-rating-title">{serviceRating.title}</h2>
         <p>{serviceRating.description}</p>
         <a className="text-link" href="#issues">
