@@ -11,6 +11,7 @@ export type Category = Exclude<keyof typeof categories, 'all'>;
 export const evidenceGroups: Record<string, string> = {
   'service-quality': 'Trao đổi & xử lý',
   'service-fees': 'Thỏa thuận & thay đổi phí',
+  'data-handover': 'Bàn giao cho kế toán mới',
 };
 export type Evidence = {
   id: string;
@@ -149,13 +150,28 @@ export const evidence: Evidence[] = [
   },
   {
     id: 'handover-01',
-    title: 'Yêu cầu bàn giao dữ liệu kế toán',
+    title: '01 · Trao đổi về bàn giao cho kế toán mới',
     date: null,
+    time: '14:47–14:50 (giờ hiển thị trong hội thoại)',
+    group: 'data-handover',
     category: 'handover',
     description:
-      'Vị trí bổ sung trao đổi gốc về yêu cầu bàn giao file dữ liệu mềm.',
-    image: '/evidence/sample.svg',
+      'Thuế Hạ Long nói không có trách nhiệm bàn giao cho kế toán của iMoca, sau đó nêu có bàn giao sổ sách và cung cấp file mềm khi thuế kiểm tra. iMoca không đồng ý và yêu cầu bàn giao toàn bộ cho kế toán của mình. Ảnh đã có đánh dấu đỏ khi được cung cấp; ngày trao đổi không hiển thị.',
+    image: '/evidence/data-handover-01.jpg',
     type: 'image',
-    sample: true,
+    sample: false,
+  },
+  {
+    id: 'handover-02',
+    title: '02 · Phản hồi về yêu cầu bàn giao file mềm',
+    date: null,
+    time: '14:51–14:52 (giờ hiển thị trong hội thoại)',
+    group: 'data-handover',
+    category: 'handover',
+    description:
+      'iMoca yêu cầu trả lời rõ có bàn giao hay không. Thuế Hạ Long nói bàn giao sổ sách theo quy định và cho rằng không có quy định phải bàn giao file mềm. iMoca phản hồi rằng cách xử lý này gây khó khăn khi chuyển giao. Đây là quan điểm trong hội thoại, không phải kết luận pháp lý của website. Ảnh giữ nguyên đánh dấu đỏ do người cung cấp thực hiện.',
+    image: '/evidence/data-handover-02.jpg',
+    type: 'image',
+    sample: false,
   },
 ];

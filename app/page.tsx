@@ -16,6 +16,7 @@ import { HandoverDiagram } from '@/components/HandoverDiagram';
 import { EvidenceGallery } from '@/components/EvidenceGallery';
 import { QualityEvidence } from '@/components/QualityEvidence';
 import { FeeEvidence } from '@/components/FeeEvidence';
+import { HandoverEvidence } from '@/components/HandoverEvidence';
 import { EvidenceModal } from '@/components/EvidenceModal';
 import { BusinessLesson } from '@/components/BusinessLesson';
 import { Disclaimer } from '@/components/Disclaimer';
@@ -230,7 +231,8 @@ export default function Home() {
                     iMoca.
                   </li>
                   <li>
-                    Cho rằng kế toán mới phải nhập/làm lại dữ liệu từ đầu năm.
+                    Nêu có bàn giao sổ sách, còn file mềm được cung cấp khi thuế
+                    kiểm tra.
                   </li>
                 </ul>
                 {site.halongLogo && (
@@ -257,8 +259,10 @@ export default function Home() {
               Xem trao đổi gốc <ArrowUpRight size={18} />
             </button>
             <p className="source-pending">
-              Chưa đính kèm trao đổi gốc trong bản mẫu này.
+              Xem 2 ảnh trao đổi do iMoca cung cấp, giữ nguyên dấu khoanh đỏ sẵn
+              có.
             </p>
+            <HandoverEvidence onOpen={setSelected} />
           </TimelineSection>
           <TimelineSection
             id="evidence"
