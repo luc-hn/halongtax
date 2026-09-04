@@ -58,6 +58,7 @@ export default function Home() {
         <span className="header-divider" />
         <span className="header-label">HỒ SƠ TRẢI NGHIỆM</span>
         <div className="header-right">
+          <a className="share-button" href="/hoi-thoai-zalo">Lịch sử Zalo</a>
           <span className="draft-badge">
             <span />
             Đang bổ sung
