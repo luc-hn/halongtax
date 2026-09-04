@@ -1693,3 +1693,16 @@ h1 > span {
   width: 100%;
   line-height: 1.4;
 }
+
+.contact-context {
+  border-left: 3px solid #2463db;
+  padding: 4px 0 4px 18px;
+  margin: 24px 0;
+}
+.contact-context h3 {
+  font-size: 19px;
+}
+.contact-context p {
+  font-size: 15px;
+  margin-bottom: 12px;
+}

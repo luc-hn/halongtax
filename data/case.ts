@@ -9,9 +9,10 @@ export const chapters = [
   { id: 'lessons', number: '07', label: 'Bài học cho doanh nghiệp' },
 ];
 export const site = {
-  title: 'Trải nghiệm của iMoca khi sử dụng dịch vụ kế toán Hạ Long Tax',
+  title: 'Kế toán Hạ Long (Hạ Long Tax): Trải nghiệm của iMoca',
   description:
-    'Từ mức phí 1 triệu/tháng, có quý lên tới 4,5 triệu và vấn đề phát sinh khi iMoca yêu cầu bàn giao dữ liệu kế toán.',
+    'iMoca chia sẻ trải nghiệm kế toán thuế Hạ Long Tax, làm việc với Phạm Quang Lương: thay đổi phí, chất lượng trao đổi và bàn giao dữ liệu, kèm ảnh đối chiếu.',
+  name: 'iMoca — Hồ sơ trải nghiệm',
   origin: 'https://imoca-halongtax.hoanglucmc.chatgpt.site',
   halongLogo: '', // Chỉ điền đường dẫn logo chính thức được cung cấp.
 };

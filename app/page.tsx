@@ -93,6 +93,19 @@ export default function Home() {
               Năm 2024, iMoca bắt đầu sử dụng dịch vụ kế toán thuế của Hạ Long
               Tax. Hai bên làm việc dựa trên sự tin tưởng.
             </p>
+            <div className="contact-context" id="pham-quang-luong">
+              <h3>Phạm Quang Lương — Kế toán Hạ Long</h3>
+              <p>
+                Theo thông tin iMoca cung cấp, ông Phạm Quang Lương là giám đốc
+                Hạ Long Tax và là người trực tiếp làm việc với iMoca trong quá
+                trình sử dụng dịch vụ kế toán thuế Hạ Long.
+              </p>
+              <p>
+                Hồ sơ này trình bày trải nghiệm từ phía iMoca và các ảnh trao
+                đổi để đối chiếu; đây không phải website chính thức của Hạ Long
+                Tax.
+              </p>
+            </div>
             <div className="agreement-card">
               <div>
                 <span className="eyebrow">MỨC PHÍ ĐƯỢC TRAO ĐỔI</span>

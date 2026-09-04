@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://imoca-halongtax.hoanglucmc.chatgpt.site/sitemap.xml

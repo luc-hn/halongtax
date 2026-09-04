@@ -13,14 +13,14 @@ export function Hero() {
       <h1>
         Trải nghiệm của iMoca
         <br />
-        khi sử dụng dịch vụ kế toán
+        khi sử dụng dịch vụ kế toán thuế
         <br />
         <span>Hạ Long Tax.</span>
       </h1>
       <p className="hero-description">
-        Từ những trao đổi ban đầu đến vấn đề bàn giao dữ liệu.
-        <br className="desktop-break" /> Một câu chuyện được nhìn lại qua sự
-        kiện, số liệu và tài liệu.
+        Hồ sơ trải nghiệm của iMoca với Kế toán Hạ Long (Hạ Long Tax): từ thỏa
+        thuận phí, quá trình làm việc đến bàn giao dữ liệu cho kế toán mới. Các
+        ảnh trao đổi được đính kèm để người đọc đối chiếu.
       </p>
       <div className="story-line">
         <strong>1 triệu/tháng</strong>

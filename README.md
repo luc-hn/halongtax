@@ -26,7 +26,12 @@ Mobile 375–430px: một cột, thanh số chương dưới màn hình, tiến 
 - `image`: ảnh hoặc thumbnail. `file`: đường dẫn tài liệu gốc. `type`: `image` hoặc `pdf`. PDF mở ở tab riêng, ảnh có zoom, vuốt, nút trước/sau và phím mũi tên.
 - `sample: false` chỉ khi đã thay tài liệu mẫu bằng tài liệu thật. Thay thông báo bản mẫu trong header/footer/kho tài liệu khi hồ sơ đã hoàn tất.
 - `public/og.png`: ảnh chia sẻ 1200×630. Cập nhật `site.origin` khi đổi tên miền.
-- `app/layout.tsx`: metadata. Bản mẫu đang `noindex`. Chuyển `robots` sang `index:true, follow:true` khi nội dung được chuẩn bị để công khai.
+- `app/layout.tsx`: metadata với `index:true, follow:true`. Google vẫn chưa thể đọc nội dung nếu quyền truy cập Sites còn riêng tư. `public/robots.txt` và `public/sitemap.xml` dùng cùng tên miền với `site.origin`; cập nhật cả ba khi chuyển tên miền.
+- `components/StructuredData.tsx`: WebSite, WebPage, Article, đơn vị được đề cập và người làm việc trực tiếp. Thông tin Phạm Quang Lương do iMoca cung cấp, được ghi rõ trong nội dung trang. Không khai báo điểm đánh giá tổng hợp hay số lượng người đánh giá.
+
+## Đưa nội dung lên Google
+
+Sau khi chủ sở hữu quyết định mở website công khai, thêm URL-prefix property trong Google Search Console cho `https://imoca-halongtax.hoanglucmc.chatgpt.site/`. Dùng mã xác minh do Google cấp (không tạo mã giả); có thể thêm qua metadata `verification.google` trong layout rồi build lại. Gửi `/sitemap.xml` và dùng URL Inspection cho trang chủ. Các chương `#fees`, `#handover` là phần của cùng một trang, không phải các trang độc lập trong sitemap. Không cam kết thứ hạng hoặc thời gian được lập chỉ mục.
 
 Ví dụ một tài liệu thật (chỉ dùng ngày và nội dung đã được xác nhận):
 
