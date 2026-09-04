@@ -12,7 +12,7 @@ export const site = {
   title: 'Trải nghiệm của iMoca khi sử dụng dịch vụ kế toán Hạ Long Tax',
   description:
     'Từ mức phí 1 triệu/tháng, có quý lên tới 4,5 triệu và vấn đề phát sinh khi iMoca yêu cầu bàn giao dữ liệu kế toán.',
-  origin: 'https://imoca-halongtax.bright-pine-9327.chatgpt.site',
+  origin: 'https://imoca-halongtax.hoanglucmc.chatgpt.site',
   halongLogo: '', // Chỉ điền đường dẫn logo chính thức được cung cấp.
 };
 export const metrics = [
@@ -55,3 +55,4 @@ export const lessons = [
   'Quyền sở hữu dữ liệu',
   'Quy trình bàn giao',
 ];
+
