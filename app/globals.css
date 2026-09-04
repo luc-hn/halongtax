@@ -1740,3 +1740,70 @@ h1 > span {
     letter-spacing: 0.3px;
   }
 }
+
+.provider-info {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+  padding: 20px;
+  margin: 22px 0;
+  border: 1px solid var(--border);
+  background: #fff;
+  border-radius: 9px;
+}
+.provider-brand {
+  width: 132px;
+  height: auto;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+.provider-details {
+  min-width: 0;
+}
+.provider-details h2 {
+  font-size: 18px;
+  margin: 5px 0 7px;
+  letter-spacing: -0.2px;
+}
+.provider-details .eyebrow {
+  font-size: 10px;
+}
+.provider-details > p {
+  font-size: 12px;
+  margin: 7px 0 0;
+  line-height: 1.7;
+}
+.provider-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px 18px;
+}
+.provider-links a {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  min-height: 44px;
+  font-size: 14px;
+  color: #991b1b;
+}
+.provider-links a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+@media (max-width: 760px) {
+  .provider-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 20px;
+  }
+  .provider-brand {
+    width: 136px;
+  }
+  .provider-links {
+    gap: 0 16px;
+  }
+  .provider-details > p {
+    font-size: 13px;
+  }
+}

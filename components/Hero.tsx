@@ -2,6 +2,7 @@ import { ArrowDown, ArrowUpRight, FileText } from 'lucide-react';
 import { metrics } from '@/data/case';
 import { MetricCard } from './MetricCard';
 import { ServiceRating } from './ServiceRating';
+import { ProviderInfo } from './ProviderInfo';
 export function Hero() {
   return (
     <section id="overview" className="hero chapter">
@@ -31,6 +32,7 @@ export function Hero() {
         <ArrowUpRight size={19} />
         <span>Khó khăn khi bàn giao</span>
       </div>
+      <ProviderInfo />
       <div className="hero-actions">
         <a className="button primary" href="#beginning">
           Xem toàn bộ diễn biến <ArrowDown size={17} />

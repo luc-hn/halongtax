@@ -14,7 +14,9 @@ export const site = {
     'iMoca chia sẻ trải nghiệm kế toán thuế Hạ Long Tax, làm việc với Phạm Quang Lương: thay đổi phí, chất lượng trao đổi và bàn giao dữ liệu, kèm ảnh đối chiếu.',
   name: 'iMoca — Hồ sơ trải nghiệm',
   origin: 'https://imoca-halongtax.hoanglucmc.chatgpt.site',
-  halongLogo: '', // Chỉ điền đường dẫn logo chính thức được cung cấp.
+  halongLogo: '/brand/halongtax-logo.png',
+  halongPhone: '0836683528',
+  halongWebsite: 'https://ketoanhalong.com',
 };
 export const serviceRating = {
   score: 1,

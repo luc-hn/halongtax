@@ -35,6 +35,9 @@ export function StructuredData() {
         '@id': `${origin}/#service-provider`,
         name: 'Hạ Long Tax',
         alternateName: ['Kế toán Hạ Long', 'Kế toán thuế Hạ Long'],
+        url: site.halongWebsite,
+        telephone: site.halongPhone,
+        logo: `${origin}${site.halongLogo}`,
       },
       {
         '@type': 'Person',
