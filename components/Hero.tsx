@@ -1,9 +1,11 @@
 import { ArrowDown, ArrowUpRight, FileText } from 'lucide-react';
 import { metrics } from '@/data/case';
 import { MetricCard } from './MetricCard';
+import { ServiceRating } from './ServiceRating';
 export function Hero() {
   return (
     <section id="overview" className="hero chapter">
+      <ServiceRating />
       <div className="eyebrow">
         <span className="blue-dot" /> HỒ SƠ TRẢI NGHIỆM{' '}
         <span className="eyebrow-divider">/</span> 2024 — 2026

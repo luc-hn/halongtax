@@ -15,6 +15,13 @@ export const site = {
   origin: 'https://imoca-halongtax.hoanglucmc.chatgpt.site',
   halongLogo: '', // Chỉ điền đường dẫn logo chính thức được cung cấp.
 };
+export const serviceRating = {
+  score: 1,
+  total: 5,
+  title: 'Đánh giá chất lượng dịch vụ của iMoca',
+  description:
+    'Theo trải nghiệm của iMoca, chất lượng dịch vụ chưa đáp ứng kỳ vọng về sự rõ ràng trong phạm vi công việc, chi phí, cách trao đổi và việc bàn giao dữ liệu.',
+};
 export const metrics = [
   { value: '2024', label: 'Bắt đầu hợp tác' },
   { value: '1 triệu', unit: '/ tháng', label: 'Mức phí ban đầu' },
@@ -55,4 +62,3 @@ export const lessons = [
   'Quyền sở hữu dữ liệu',
   'Quy trình bàn giao',
 ];
-
