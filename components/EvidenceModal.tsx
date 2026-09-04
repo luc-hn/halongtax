@@ -16,7 +16,7 @@ import {
   DialogDescription,
   DialogClose,
 } from '@/components/ui/dialog';
-import { evidence, categories } from '@/data/evidence';
+import { evidence, categories, evidenceGroups } from '@/data/evidence';
 export function EvidenceModal({
   id,
   onClose,
@@ -65,8 +65,10 @@ export function EvidenceModal({
         <div className="viewer-header">
           <div>
             <span className="eyebrow">
-              {selectedGroup ? 'Trao đổi & xử lý' : categories[item.category]} ·{' '}
-              {index + 1} / {items.length}
+              {selectedGroup
+                ? evidenceGroups[selectedGroup]
+                : categories[item.category]}{' '}
+              · {index + 1} / {items.length}
             </span>
             <DialogTitle>{item.title}</DialogTitle>
           </div>

@@ -15,6 +15,7 @@ import { BeforeAfterFlow } from '@/components/BeforeAfterFlow';
 import { HandoverDiagram } from '@/components/HandoverDiagram';
 import { EvidenceGallery } from '@/components/EvidenceGallery';
 import { QualityEvidence } from '@/components/QualityEvidence';
+import { FeeEvidence } from '@/components/FeeEvidence';
 import { EvidenceModal } from '@/components/EvidenceModal';
 import { BusinessLesson } from '@/components/BusinessLesson';
 import { Disclaimer } from '@/components/Disclaimer';
@@ -121,21 +122,25 @@ export default function Home() {
             title="Phí dịch vụ thay đổi"
           >
             <div className="fee-heading">
-              <p>Mức phí theo quý iMoca ghi nhận</p>
+              <p>
+                1 triệu/tháng → 1,5 triệu/tháng
+                <br />
+                Tương đương 3 triệu/quý → 4,5 triệu/quý
+              </p>
               <span className="increase">
                 +50% <small>so với ban đầu</small>
               </span>
             </div>
             <div
               className="fee-chart"
-              aria-label="Phí tăng từ 3 triệu đến 3,24 triệu và có quý 4,5 triệu đồng"
+              aria-label="Mức ban đầu 3 triệu/quý, ảnh yêu cầu chuyển khoản 3,24 triệu và yêu cầu phí 4,5 triệu/quý"
             >
               <div className="chart-grid" />
               {fees.map((f, i) => (
                 <div className={'fee-column fee-' + i} key={f.amount}>
                   <strong>
                     {f.amount}
-                    <small>/ quý</small>
+                    <small>{f.unit}</small>
                   </strong>
                   <div className="fee-bar" style={{ height: f.height + '%' }} />
                   <span>{f.label}</span>
@@ -146,16 +151,24 @@ export default function Home() {
               Theo trải nghiệm của iMoca, không có thỏa thuận rõ ràng về việc
               mức phí tăng tương ứng với phạm vi công việc nào.
             </p>
+            <p className="source-pending">
+              Khoản 3.240.000đ xuất hiện trong ảnh tạo yêu cầu chuyển khoản;
+              chưa đủ thông tin để xác định phần chênh lệch 240.000đ. Không coi
+              đây là một mức phí cơ bản mới.
+            </p>
             <details className="payment-details">
               <summary>
                 Xem chi tiết các khoản thanh toán <span>+</span>
               </summary>
               <p>
-                Chưa bổ sung ngày giao dịch và chứng từ gốc. Các mức phí trên
-                được trình bày theo nội dung iMoca cung cấp.
+                03/11/2025: ảnh hiển thị chuyển thành công 3.000.000đ. Mốc gửi
+                ảnh 14/02/2026: tạo yêu cầu chuyển khoản 3.240.000đ, chưa xác
+                nhận hoàn tất. Phí quý 2: yêu cầu thanh toán 4.500.000đ, chưa có
+                xác nhận thanh toán trong bộ ảnh này.
               </p>
               {evidenceButton('payment-01', 'Xem mục tài liệu thanh toán')}
             </details>
+            <FeeEvidence onOpen={setSelected} />
           </TimelineSection>
           <TimelineSection
             id="automation"

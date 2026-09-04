@@ -8,6 +8,10 @@ export const categories = {
   other: 'Khác',
 };
 export type Category = Exclude<keyof typeof categories, 'all'>;
+export const evidenceGroups: Record<string, string> = {
+  'service-quality': 'Trao đổi & xử lý',
+  'service-fees': 'Thỏa thuận & thay đổi phí',
+};
 export type Evidence = {
   id: string;
   title: string;
@@ -24,25 +28,52 @@ export type Evidence = {
 export const evidence: Evidence[] = [
   {
     id: 'agreement-01',
-    title: 'Trao đổi về mức phí ban đầu',
+    title: '01 · Mức phí 3 triệu/quý và ảnh yêu cầu chuyển khoản',
     date: null,
+    group: 'service-fees',
     category: 'messages',
     description:
-      'Vị trí bổ sung trao đổi về mức phí và phạm vi dịch vụ khi bắt đầu hợp tác.',
-    image: '/evidence/sample.svg',
+      'Thuế Hạ Long nhắc mức “3tr/quý”, tương đương 1 triệu/tháng. Bên dưới là ảnh tạo yêu cầu chuyển khoản 3.240.000đ được gửi tại mốc 14/02/2026; ảnh này chưa xác nhận giao dịch đã hoàn tất. Ngày của tin nhắn báo phí không hiển thị.',
+    image: '/evidence/service-fees-01.jpg',
     type: 'image',
-    sample: true,
+    sample: false,
   },
   {
     id: 'payment-01',
-    title: 'Các khoản phí dịch vụ ghi nhận',
-    date: null,
+    title: '02 · Trao đổi và ảnh chuyển khoản 3 triệu đồng',
+    date: '2025-11-03',
+    group: 'service-fees',
     category: 'payment',
     description:
-      'Vị trí bổ sung ảnh chuyển khoản và đối chiếu các mức phí theo quý.',
-    image: '/evidence/sample.svg',
+      'Trong hội thoại ngày 03/11/2025, iMoca hỏi dùng tài khoản công ty; Thuế Hạ Long trả lời chuyển từ tài khoản cá nhân. Ảnh đính kèm hiển thị chuyển thành công 3.000.000đ. Ảnh không nêu rõ kỳ dịch vụ.',
+    image: '/evidence/service-fees-02.jpg',
     type: 'image',
-    sample: true,
+    sample: false,
+  },
+  {
+    id: 'fees-03',
+    title: '03 · Yêu cầu thanh toán phí quý 2: 4,5 triệu đồng',
+    date: null,
+    group: 'service-fees',
+    category: 'messages',
+    description:
+      'Thuế Hạ Long yêu cầu phí quý 2 là 4,5 triệu đồng, tương đương 1,5 triệu/tháng. iMoca hỏi về mức phí khi đã tự xuất hóa đơn tháng 4–5–6. Ở mốc 11/08/2026, phía dịch vụ phản hồi công việc không chỉ có báo cáo quý. Ngày gửi yêu cầu thanh toán không hiển thị; đây chưa phải chứng từ đã thanh toán.',
+    image: '/evidence/service-fees-03.jpg',
+    type: 'image',
+    sample: false,
+  },
+  {
+    id: 'fees-04',
+    title: '04 · Phản hồi về phạm vi công việc và mức 1,5 triệu/tháng',
+    date: null,
+    time: '13:47 (giờ phản hồi hiển thị)',
+    group: 'service-fees',
+    category: 'messages',
+    description:
+      'Thuế Hạ Long gửi ảnh sổ sách và nêu thêm công việc báo cáo năm, giải trình thuế. iMoca phản hồi về việc tăng lên 1,5 triệu/tháng so với mức 1 triệu đã trao đổi trước đó. Một phần tin nhắn cuối ảnh bị che; giữ nguyên ảnh người dùng cung cấp.',
+    image: '/evidence/service-fees-04.jpg',
+    type: 'image',
+    sample: false,
   },
   {
     id: 'invoice-01',

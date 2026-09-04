@@ -29,9 +29,14 @@ export const metrics = [
   { value: '05/2026', label: 'Tự động hóa xuất hóa đơn' },
 ];
 export const fees = [
-  { amount: '3.000.000đ', label: 'Ban đầu', height: 66 },
-  { amount: '3.240.000đ', label: 'Mức phí ghi nhận', height: 72 },
-  { amount: '4.500.000đ', label: 'Có quý lên tới', height: 100 },
+  { amount: '3.000.000đ', unit: '/ quý', label: 'Ban đầu', height: 66 },
+  { amount: '3.240.000đ', unit: '', label: 'Yêu cầu chuyển khoản', height: 72 },
+  {
+    amount: '4.500.000đ',
+    unit: '/ quý',
+    label: 'Phí được yêu cầu',
+    height: 100,
+  },
 ];
 export const issues = [
   {
