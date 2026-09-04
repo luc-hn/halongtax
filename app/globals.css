@@ -1677,3 +1677,12 @@ h1 > span {
     font-size: 14px;
   }
 }
+
+.quality-evidence {
+  margin-top: 30px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+}
+.quality-evidence > p {
+  font-size: 14px;
+}

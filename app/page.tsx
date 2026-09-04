@@ -14,6 +14,7 @@ import { TimelineSection } from '@/components/TimelineSection';
 import { BeforeAfterFlow } from '@/components/BeforeAfterFlow';
 import { HandoverDiagram } from '@/components/HandoverDiagram';
 import { EvidenceGallery } from '@/components/EvidenceGallery';
+import { QualityEvidence } from '@/components/QualityEvidence';
 import { EvidenceModal } from '@/components/EvidenceModal';
 import { BusinessLesson } from '@/components/BusinessLesson';
 import { Disclaimer } from '@/components/Disclaimer';
@@ -57,7 +58,7 @@ export default function Home() {
         <div className="header-right">
           <span className="draft-badge">
             <span />
-            Bản mẫu
+            Đang bổ sung
           </span>
           <button className="share-button" onClick={share}>
             <Share2 size={16} />
@@ -194,6 +195,7 @@ export default function Home() {
                 </article>
               ))}
             </div>
+            <QualityEvidence onOpen={setSelected} />
           </TimelineSection>
           <TimelineSection
             id="handover"

@@ -27,20 +27,24 @@ export function EvidenceModal({
   const [index, setIndex] = useState(0);
   const [zoom, setZoom] = useState(false);
   const start = useRef<number | null>(null);
+  const selectedGroup = evidence.find((entry) => entry.id === id)?.group;
+  const items = selectedGroup
+    ? evidence.filter((entry) => entry.group === selectedGroup)
+    : evidence;
   useEffect(() => {
     if (id) {
       setIndex(
         Math.max(
           0,
-          evidence.findIndex((e) => e.id === id),
+          items.findIndex((e) => e.id === id),
         ),
       );
       setZoom(false);
     }
   }, [id]);
-  const item = evidence[index];
+  const item = items[index] ?? items[0];
   function move(delta: number) {
-    setIndex((i) => (i + delta + evidence.length) % evidence.length);
+    setIndex((i) => (i + delta + items.length) % items.length);
     setZoom(false);
   }
   return (
@@ -61,7 +65,8 @@ export function EvidenceModal({
         <div className="viewer-header">
           <div>
             <span className="eyebrow">
-              {categories[item.category]} · {index + 1} / {evidence.length}
+              {selectedGroup ? 'Trao đổi & xử lý' : categories[item.category]} ·{' '}
+              {index + 1} / {items.length}
             </span>
             <DialogTitle>{item.title}</DialogTitle>
           </div>
@@ -123,7 +128,7 @@ export function EvidenceModal({
               <ChevronLeft />
             </button>
             <span>
-              {index + 1} / {evidence.length}
+              {index + 1} / {items.length}
             </span>
             <button
               className="icon-button"

@@ -14,7 +14,8 @@ export function Disclaimer() {
         nào. Người đọc có thể xem các tài liệu đính kèm và tự đưa ra đánh giá.
       </p>
       <div className="sample-notice">
-        Bản mẫu giao diện · Các tài liệu minh họa chưa phải bằng chứng gốc.
+        Hồ sơ đang bổ sung · Ảnh trao đổi do iMoca cung cấp được phân biệt với
+        các mục “Tài liệu mẫu” chưa có tài liệu gốc.
       </div>
     </footer>
   );

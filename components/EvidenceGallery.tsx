@@ -26,7 +26,8 @@ export function EvidenceGallery({ onOpen }: { onOpen: (id: string) => void }) {
         ))}
       </div>
       <p className="sample-line">
-        Các mục bên dưới là vị trí mẫu, chưa đính kèm tài liệu gốc.
+        Đã có {evidence.filter((item) => !item.sample).length} ảnh do iMoca cung
+        cấp. Những mục ghi “Tài liệu mẫu” chưa có tài liệu gốc.
       </p>
       <div className="evidence-grid">
         {items.map((item) => (

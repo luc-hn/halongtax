@@ -24,7 +24,7 @@ export function EvidenceCard({
           loading="lazy"
         />
         <span className="sample-tag">
-          {item.sample ? 'TÀI LIỆU MẪU' : item.type.toUpperCase()}
+          {item.sample ? 'TÀI LIỆU MẪU' : 'TÀI LIỆU IMOCA CUNG CẤP'}
         </span>
         <span className="thumbnail-open">
           <ArrowUpRight size={19} />
